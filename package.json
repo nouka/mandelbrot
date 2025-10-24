@@ -1,7 +1,7 @@
 {
 	"scripts": {
-		"predeploy": "wasm-pack build --target web",
-		"deploy": "gh-pages -d ./"
+		"predeploy": "wasm-pack build --target web --out-dir ./public/pkg",
+		"deploy": "gh-pages -d ./public"
 	},
 	"dependencies": {
 		"gh-pages": "^6.3.0"
