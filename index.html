@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>hello-wasm example</title>
+  </head>
+  <body>
+    <script type="module">
+      import init, { draw_mandelbrot_set } from "./pkg/mandelbrot.js";
+
+      init().then(() => {
+        draw_mandelbrot_set();
+      });
+    </script>
+    <canvas id="canvas_wasm" width="800" height="800"></canvas>
+  </body>
+</html>
