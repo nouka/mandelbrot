@@ -1,7 +1,9 @@
 {
+	"name": "mandelbrot",
+	"homepage": "https://nouka.github.io/mandelbrot/",
 	"scripts": {
-		"predeploy": "wasm-pack build --target web --out-dir ./public/pkg",
-		"deploy": "gh-pages -d ./public"
+		"predeploy": "wasm-pack build --target web --out-dir ./public/pkg --release",
+		"deploy": "gh-pages -d public"
 	},
 	"dependencies": {
 		"gh-pages": "^6.3.0"
